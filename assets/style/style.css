@@ -137,17 +137,22 @@ a {
 .fb-page {
   width: 700px !important;
 }
+.map-info-wrapper {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+}
 .map-info-container {
   display: flex;
   position: relative;
+  float: left;
   width: 100%;
-  height: 700px;
-  box-shadow: 0px 5px 8px 0px #555555;
+  height: 100%;
 }
 .info-container {
   display: flex;
-  position: fixed;
-  width: 25%;
+  float: left;
+  width: 50%;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -158,12 +163,9 @@ a:link, a:visited {
 }
 .info-container-2{
   display: flex;
-  position: fixed;
-  float: right;
   color: white;
-  width: 25%;
+  width: 50%;
   height: 100%;
-  right: 0;
   justify-content: center;
   align-items: center;
   background-color: #46648c;
@@ -281,7 +283,7 @@ a:link, a:visited {
      -o-transition: All 0.3s ease;
    }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1090px) {
   .nav-container {
     display: flex;
   }
@@ -307,7 +309,47 @@ a:link, a:visited {
     padding-top: 50px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1090px) {
+  .social-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .info-container-2 {
+    display: none;
+  }
+  .menu-wrapper {
+    width: 150%;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .nav-container {
+    display: flex;
+  }
+  .menu-social-container {
+    width: 100%;
+    position: relative;
+  }
+  .menu-wrapper {
+    width: 100%;
+    display: grid;
+    left: 0;
+  }
+  .menu-img {
+    margin: 0;
+    width: 100%;
+    object-fit: fill;
+    height: auto;
+  }
+  .map-container {
+    width: 50%;
+  }
+  .img-01 {
+    padding-top: 50px;
+  }
+  .info-container-2 {
+    display: none;
+  }
   .social-container {
     display: none;
   }
