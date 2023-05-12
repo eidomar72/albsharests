@@ -126,6 +126,14 @@ a {
   padding: 10px;
   border-top: 1px solid;
 }
+.menu-bur-ket {
+  padding: 10px;
+  border-top: 1px solid;
+}
+.w3-bar-block {
+  width: 250px;
+  transform: translateX(-100px);
+}
 .social-container{
   display: flex;
   width: 50%;
