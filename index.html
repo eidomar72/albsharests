@@ -13,6 +13,7 @@
     <!-- .stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- /.stylesheets -->
 
     <!-- .fonts -->
@@ -33,51 +34,74 @@
           <div class="menu-items">
             <ul>
               <div id="english">
-                <a class="menu-items-bur" href="#menu-social-container">MENU</a>
-                <a class="menu-items-bur" href="#map-info-container">LOCATION & HOURS</a>
+                <a class="menu-items-bur" href="#Location">LOCATION & HOURS</a>
               </div>
               <div id="arabic">
-                <a class="menu-items-bur" href="#menu-social-container">قائمة الطعام</a>
                 <a class="menu-items-bur" href="#map-info-container">الاتجاهات و أوقات العمل</a>
               </div>
-              <div id="language-links" class="language-links">
-                <label class="switch">
-                	<input id="switch" class="switch-input" type="checkbox" />
-                	<span id="switch" class="switch-label" data-on="English" data-off="Arabic"></span>
-                	<span class="switch-handle"></span>
-                </label>
-              </div>
+              <div class="burger-icon">
+                <div class="w3-dropdown-click">
+                  <button onclick="myFunction()" class="w3-button w3-black">Menu</button>
+                  <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+                    <div class="menu-bur"><a href="#Appetizer">Appetizer & Salads</a></div>
+                    <div class="menu-bur"><a href="#Barbecue">Barbecue</a></div>
+                    <div class="menu-bur"><a href="#Pies">Pies & Pizza</a></div>
+                    <div class="menu-bur"><a href="#Plates">Plates</a></div>
+                    <div class="menu-bur"><a href="#Sandwiches">Sandwiches & Sweets</a></div>
+                    <div class="menu-bur"><a href="#Juices">Juices</a></div>
+                    <div class="menu-bur"><a href="#Tea">Tea & Coffee</a></div>
+                    <div class="menu-bur"><a href="#Location">Location</a></div>
+                  </div>
+                </div>
+            </div>
             </ul>
           </div>
-          <div>
-            <img id="rest-logo" width="150px" height="auto" src="assets\imgs\Asset 12.png">
-          </div>
-          <div class="rest-socials">
+          <!--div class="rest-socials">
             <ul>
               <a class="social-icons" href=""><img width="30px" src="assets\imgs\social\twitter_d.png"></a>
               <a class="social-icons" href=""><img width="30px" src="assets\imgs\social\facebook_d.png"></a>
               <a class="social-icons" href=""><img width="30px" src="assets\imgs\social\instagram_d.png"></a>
               <a class="social-icons" href=""><img width="30px" src="assets\imgs\social\whatsapp_d.png"></a>
             </ul>
-          </div>
+          </div-->
         </div>
         <!-- /.nav-bar -->
+        <script>
+        function myFunction() {
+          var x = document.getElementById("Demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
 
-
-        <!-- .about -->
-        <div class="about-container">
-          <img class="about-pics" src="assets\01.jpeg">
-          <img class="about-pics" src="assets\02.jpeg">
-          <img class="about-pics" src="assets\03.jpeg">
-          <img class="about-pics" src="assets\04.jpg">
-        </div>
-        <!-- /.about -->
 
         <!-- .menu-social -->
         <div id="menu-social-container" class="menu-social-container">
 
           <div class="menu-wrapper">
-            <embed src="assets\المنيو الرئيسي مطعم الباشا.pdf" type="application/pdf" width="100%" height="700px" />
+            <img class="menu-img img-01" src="assets\menu\menu (1).png" width="100%" height="700px" />
+            <img class="menu-img" src="assets\menu\menu (2).png" width="100%" height="700px" />
+            <img class="menu-img" src="assets\menu\menu (3).png" width="100%" height="700px" />
+            <img class="menu-img" id="Appetizer" src="assets\menu\menu (4).png" width="100%" height="700px" />
+            <img class="menu-img" id="Barbecue" src="assets\menu\menu (5).png" width="100%" height="700px" />
+            <img class="menu-img" id="Pies"src="assets\menu\menu (6).png" width="100%" height="700px" />
+            <img class="menu-img" id="" src="assets\menu\menu (7).png" width="100%" height="700px" />
+            <img class="menu-img" id="Plates" src="assets\menu\menu (8).png" width="100%" height="700px" />
+            <img class="menu-img" id="Sandwiches" src="assets\menu\menu (9).png" width="100%" height="700px" />
+            <img class="menu-img" id="Juices" src="assets\menu\menu (10).png" width="100%" height="700px" />
+            <img class="menu-img" id="Tea" src="assets\menu\menu (11).png" width="100%" height="700px" />
+            <img class="menu-img" src="assets\menu\menu (12).png" width="100%" height="700px" />
+            <div id="Location" class="map-container">
+              <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14204.172960217182!2d49.5523119!3d27.123448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e350fbc68e56c81%3A0x92b3f581b3e435df!2sAl-Basha%20Restaurant!5e0!3m2!1sen!2ssa!4v1683749635573!5m2!1sen!2ssa"
+                width="200%" height="450"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
           </div>
 
           <div class="social-container">
@@ -102,6 +126,29 @@
 
           <div class="info-container">
             <div class="contact-info">
+              <div id="language-links" class="language-links">
+                <label class="switch">
+                	<input id="switch" class="switch-input" type="checkbox" />
+                	<span id="switch" class="switch-label" data-on="English" data-off="Arabic"></span>
+                	<span class="switch-handle"></span>
+                </label>
+              </div>
+              <div class="menu-bur"><a href="#Appetizer">Appetizer & Salads</a></div>
+              <div class="menu-bur"><a href="#Barbecue">Barbecue</a></div>
+              <div class="menu-bur"><a href="#Pies">Pies & Pizza</a></div>
+              <div class="menu-bur"><a href="#Plates">Plates</a></div>
+              <div class="menu-bur"><a href="#Sandwiches">Sandwiches & Sweets</a></div>
+              <div class="menu-bur"><a href="#Juices">Juices</a></div>
+              <div class="menu-bur"><a href="#Tea">Tea & Coffee</a></div>
+              <div class="menu-bur"><a href="#Location">Location</a></div>
+              <div>
+                <img id="rest-logo" width="150px" height="auto" src="assets\imgs\Asset 12.png">
+              </div>
+
+            </div>
+          </div>
+          <div class="info-container-2">
+            <div class="contact-info">
               <div style="text-decoration: underline"><a>Call Us: </div>
               <div><a>+966 13 349 8000</a></div>
               <div><a> +966 13 349 7000</a></div>
@@ -113,14 +160,7 @@
             </div>
           </div>
 
-          <div class="map-container">
-            <div class="google-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14204.172960217182!2d49.5523119!3d27.123448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e350fbc68e56c81%3A0x92b3f581b3e435df!2sAl-Basha%20Restaurant!5e0!3m2!1sen!2ssa!4v1683749635573!5m2!1sen!2ssa"
-              width="600" height="450"
-              style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
+
 
       </div>
 
@@ -134,7 +174,7 @@
     </header>
   </body>
 
-  <script>
+  <!--script>
   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
   window.onscroll = function() {scrollFunction()};
 
@@ -153,7 +193,7 @@
       document.getElementById("language-links").style.fontSize = "20px";
     }
   }
-  </script>
+  </script-->
   <script>
     var id_switch = document.getElementById('switch');
 
