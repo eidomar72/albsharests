@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+    <!-- .metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>restTemp</title>
+    <!-- /.metas -->
+
+    <!-- .stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- /.stylesheets -->
+
+    <!-- .fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- /.fonts -->
+
+    <!-- .favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets\imgs\Asset 7.png">
+    <!-- /.favicon -->
+  </head>
+
+  <body>
+    <header>
+
+      <div class="page-wrapper">
+        <!-- .nav-bar -->
+        <div id="nav-container" class="nav-container">
+          <div class="menu-items">
+            <ul>
+              <div id="english">
+                <a class="menu-items-bur" href="#menu-social-container">MENU</a>
+                <a class="menu-items-bur" href="#map-info-container">LOCATION & HOURS</a>
+              </div>
+              <div id="arabic">
+                <a class="menu-items-bur" href="#menu-social-container">قائمة الطعام</a>
+                <a class="menu-items-bur" href="#map-info-container">الاتجاهات و أوقات العمل</a>
+              </div>
+              <div id="language-links" class="language-links">
+                <label class="switch">
+                	<input id="switch" class="switch-input" type="checkbox" />
+                	<span id="switch" class="switch-label" data-on="English" data-off="Arabic"></span>
+                	<span class="switch-handle"></span>
+                </label>
+              </div>
+            </ul>
+          </div>
+          <div>
+            <img id="rest-logo" width="150px" height="auto" src="assets\imgs\Asset 12.png">
+          </div>
+          <div class="rest-socials">
+            <ul>
+              <a class="social-icons" href=""><img width="30px" src="assets\imgs\social\twitter_d.png"></a>
+              <a class="social-icons" href=""><img width="30px" src="assets\imgs\social\facebook_d.png"></a>
+              <a class="social-icons" href=""><img width="30px" src="assets\imgs\social\instagram_d.png"></a>
+              <a class="social-icons" href=""><img width="30px" src="assets\imgs\social\whatsapp_d.png"></a>
+            </ul>
+          </div>
+        </div>
+        <!-- /.nav-bar -->
+
+
+        <!-- .about -->
+        <div class="about-container">
+          <img class="about-pics" src="assets\01.jpeg">
+          <img class="about-pics" src="assets\02.jpeg">
+          <img class="about-pics" src="assets\03.jpeg">
+          <img class="about-pics" src="assets\04.jpg">
+        </div>
+        <!-- /.about -->
+
+        <!-- .menu-social -->
+        <div id="menu-social-container" class="menu-social-container">
+
+          <div class="menu-wrapper">
+            <embed src="assets\المنيو الرئيسي مطعم الباشا.pdf" type="application/pdf" width="100%" height="700px" />
+          </div>
+
+          <div class="social-container">
+
+            <div class="delivery-app-container">
+
+            </div>
+
+          <!-- div class="twitter-container">
+            <a class="twitter-timeline" href="https://twitter.com/woIff7?ref_src=twsrc%5Etfw">Tweets by woIff7</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="340" data-height="650" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="DCqrpvk2"></script>
+        </div>
+      </div -->
+        <!-- /.menu-social -->
+
+        <!-- .map-and-info -->
+        <div id="map-info-container" class="map-info-container">
+
+          <div class="info-container">
+            <div class="contact-info">
+              <div style="text-decoration: underline"><a>Call Us: </div>
+              <div><a>+966 13 349 8000</a></div>
+              <div><a> +966 13 349 7000</a></div>
+              <div><a> +966 13 349 3000</a></div><br>
+              <div style="text-decoration: underline"><a>Address: </div>
+                <div><a>Deffi, Al Jubail, Saudi Arabia</a></div><br>
+              <div style="text-decoration: underline"><a>Hours: </div>
+                <div><a>6am - 11pm</a></div>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14204.172960217182!2d49.5523119!3d27.123448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e350fbc68e56c81%3A0x92b3f581b3e435df!2sAl-Basha%20Restaurant!5e0!3m2!1sen!2ssa!4v1683749635573!5m2!1sen!2ssa"
+              width="600" height="450"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+      </div>
+
+
+        <div>
+
+
+        </div>
+        <!-- /.map-and-info -->
+      </div>
+    </header>
+  </body>
+
+  <script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("nav-container").style.height = "80px";
+      document.getElementById("rest-logo").style.width = "60px";
+      document.getElementById("english").style.fontSize = "15px";
+      document.getElementById("arabic").style.fontSize = "15px";
+      document.getElementById("language-links").style.fontSize = "15px";
+    } else {
+      document.getElementById("nav-container").style.height = "180px";
+      document.getElementById("rest-logo").style.width = "150px";
+      document.getElementById("english").style.fontSize = "20px";
+      document.getElementById("arabic").style.fontSize = "20px";
+      document.getElementById("language-links").style.fontSize = "20px";
+    }
+  }
+  </script>
+  <script>
+    var id_switch = document.getElementById('switch');
+
+    id_switch.addEventListener('change',function(){
+      if(this.checked == true){
+        document.getElementById("english").style.display = "block";
+        document.getElementById("arabic").style.display = "none";
+        console.log("Checked");
+      }else{
+        document.getElementById("english").style.display = "none";
+        document.getElementById("arabic").style.display = "block";
+        console.log("Not Checked");
+      }
+    });
+  </script>
+
+  <footer>
+  </footer>
+
+  </html>
